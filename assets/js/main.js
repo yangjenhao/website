@@ -114,4 +114,12 @@
 
 			});
 
+			// readMoreButton按鈕設定地方，按下才會顯示隱藏的
+			document.getElementById('readMoreButton').addEventListener('click', function(e) {
+				e.preventDefault();
+				const hiddenItems = document.querySelectorAll('.hidden');
+				hiddenItems.forEach(item => item.classList.remove('hidden'));
+				this.style.display = 'none';
+			});
+
 })(jQuery);

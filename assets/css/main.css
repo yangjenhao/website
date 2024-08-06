@@ -3219,3 +3219,7 @@ input, select, textarea {
 			}
 
 	}
+	/* readMoreButton按鈕設定地方，按下才會顯示隱藏的 */
+	.hidden {
+		display: none;
+	}
